@@ -7,8 +7,6 @@
 
 ### #lightSwitch: turn up the intensity fo the light
 
-###fogSwitch: switch the fog color
-
 ###spotLightSpeed: switch the animation duration of the spot light
 
 ###cameraSwitch: switch the position and rotation of the camera
@@ -17,4 +15,4 @@
 
 ###backgroundSwitch: change the background color
 
-###textSwitch: change the color of the text 
+###textSwitch: change the color of the text
