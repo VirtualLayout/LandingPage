@@ -26,7 +26,6 @@
     <!-- sounds -->
     <a-entity id="vibes" geometry="primitive: plane" material="color: pink" position="-10 0 0"></a-entity>
     <!-- mainMenu -->
-    <a-entity id="mainMenu" position="-7.25 5.85 -8"><a-plane material="src:url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcT5l4ULXmIyLZDMgJ2-iUnWSINwaxERpLFlqwBtnEFekiYlwnyn)"></a-plane></a-entity>
     <a-plane id="menuBackground" height="1.5" width="14" material="color:black" position="-2.25 6 -8.2"></a-plane>
     <a-entity id="bask"><a-plane id="basketball" height="1" width="1" position="-7.25 5.85 -8" material="src:url(https://cdn4.iconfinder.com/data/icons/sports-bold-line-2/48/82-128.png)"></a-plane></a-entity>
     <a-entity id="lightSwitch"><a-plane material="src:url(https://cdn3.iconfinder.com/data/icons/objects/512/Switcher-512.png)" position="-6 5.85 -8"></a-plane></a-entity>
@@ -46,7 +45,7 @@
   $('#sphere1').on('click', function () {
       // text add
       $("a-scene").append('<a-entity><a-entity class="colorText" material="color:#F16785" scale="5 5 5" text="text:Lay  ut"></a-entity><a-animation begin="500" attribute="position" from="20 0 -10" to=".15 0 -10"></a-animation></a-entity>');
-      $("a-scene").append('<a-entity><a-entity class="colorText" material="color:#F16785" scale="5 5 5" text="text:Virtual"></a-entity><a-animation begin="500" attribute="position" from="-20 0 -10" to="-10.5 0 -10"></a-animation></a-entity>');
+      $("a-scene").append('<a-entity><a-entity id="colorText" material="color:#F16785" scale="5 5 5" text="text:Virtual"></a-entity><a-animation begin="500" attribute="position" from="-20 0 -10" to="-10.5 0 -10"></a-animation></a-entity>');
       // welcome slide in and slide out
       $("a-scene").append('<a-entity><a-entity material="color:#F16785" scale="1 1 1" text="text:Welcome to"></a-entity><a-animation begin="1100" attribute="position" from="-20 3 -10" to="-4 3 -10"></a-animation><a-animation begin="2000" attribute="position" from="-4 3 -10" to="-40 3 -10"></a-animation><a-animation begin="6050" attribute="position" from="-43 3 -10" to="-8 3 -10 -10"></a-animation></a-entity>');
 
@@ -91,7 +90,7 @@
   });
 
   $('#textSwitch').on('click', function(){
-    $('.colorText').attr('color', 'blue');
+    $('#colorText').attr('color', 'blue');
   });
 
   });
