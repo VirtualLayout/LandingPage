@@ -27,14 +27,32 @@
     <a-entity id="vibes" geometry="primitive: plane" material="color: pink" position="-10 0 0"></a-entity>
     <!-- mainMenu -->
     <a-plane id="menuBackground" height="1.5" width="14" material="color:black" position="-2.25 6 -8.2"></a-plane>
+
+
     <a-entity id="bask"><a-plane id="basketball" height="1" width="1" position="-7.25 5.85 -8" material="src:url(https://cdn4.iconfinder.com/data/icons/sports-bold-line-2/48/82-128.png)"></a-plane></a-entity>
+
     <a-entity id="lightSwitch"><a-plane material="src:url(https://cdn3.iconfinder.com/data/icons/objects/512/Switcher-512.png)" position="-6 5.85 -8"></a-plane></a-entity>
-    <a-entity id="sphereMenu"><a-plane material="src:url(https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/switch.png)" position="-4.75 5.85 -8"></a-plane></a-entity>
+
+
+    <a-entity id="sphereMenu"><a-plan
+     material="src:url(https://cdn2.iconfinder.com/data/icons/windows-8-metro-style/128/switch.png)" position="-4.75 5.85 -8"></a-plane></a-entity>
+
+
     <a-entity id="fogSwitch"><a-plane material="src:url(https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQaw2r7ErK7CnwqssEY1ulDL6s0gZe7raDCUaovxK4WMSkDrwubiF2M7w)" position="-3.5 5.85 -8"></a-plane></a-entity>
+
+
     <a-entity id=spotLightSpeed><a-plane material="src:url(https://cdn0.iconfinder.com/data/icons/astronomy-1/500/speed-512.png)" position="-2.25 5.85 -8"></a-plane></a-entity>
+
+
     <a-entity id="cameraSwitch"><a-plane material="src:url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-camera-128.png)" position="-1 5.85 -8"></a-plane></a-entity>
+
+
     <a-entity id="vibesSwitch"><a-plane position=".25 5.85 -8" material="src:url(https://image.freepik.com/free-icon/music-note-sound_318-10790.jpg)"></a-plane></a-entity>
+
+
     <a-entity id="backgroundSwitch"><a-plane material="src:url(http://cdn.iconmonstr.com/wp-content/assets/preview/2015/240/iconmonstr-paint-bucket-4.png)" position="1.5 5.85 -8"></a-plane></a-entity>
+
+
     <a-entity id="textSwitch"><a-plane material="src:url(https://openclipart.org/image/800px/svg_to_png/212359/rodentia-icons_format-text-underline.png)" position="2.75 5.85 -8"></a-plane></a-entity>
 
     <!-- sky -->
@@ -44,8 +62,12 @@
   $(document).ready(function(){
   $('#sphere1').on('click', function () {
       // text add
+      //Lay ut
       $("a-scene").append('<a-entity><a-entity class="colorText" material="color:#F16785" scale="5 5 5" text="text:Lay  ut"></a-entity><a-animation begin="500" attribute="position" from="20 0 -10" to=".15 0 -10"></a-animation></a-entity>');
+
+      //Virtual
       $("a-scene").append('<a-entity><a-entity id="colorText" material="color:#F16785" scale="5 5 5" text="text:Virtual"></a-entity><a-animation begin="500" attribute="position" from="-20 0 -10" to="-10.5 0 -10"></a-animation></a-entity>');
+
       // welcome slide in and slide out
       $("a-scene").append('<a-entity><a-entity material="color:#F16785" scale="1 1 1" text="text:Welcome to"></a-entity><a-animation begin="1100" attribute="position" from="-20 3 -10" to="-4 3 -10"></a-animation><a-animation begin="2000" attribute="position" from="-4 3 -10" to="-40 3 -10"></a-animation><a-animation begin="6050" attribute="position" from="-43 3 -10" to="-8 3 -10 -10"></a-animation></a-entity>');
 
@@ -57,10 +79,12 @@
 
       // create new sphere
       $("a-scene").append('<a-entity id="sphereB" camera"><a-sphere position="0 0 -2" id="sphere1" material="color:pink)" radius="1"></a-sphere><a-animation attribute="position" from=0 0 -4" to="0 4 -8"></a-animation><a-animation begin="1410" attribute="rotation" dur="5000" fill="forwards" to="0 0 -360"></a-animation><a-animation attribute="position" begin="1710" from="0 4 -8" to="2 5 -8"></a-animation><a-animation attribute="position" begin="2500" from="2 5 -8" to="3.5 3.2 -8"></a-animation><a-animation attribute="position" begin="3400" from="3.5 3.2 -8" to="6.58 3.2 -8"></a-animation><a-animation attribute="position" begin="4500" from="6.58 3.2 -8" to="6.58 .9 -8"></a-animation></a-entity>');
+
       // sphere slammer
-      $("a-scene").append('<a-entity id="sphereRod"><a-cylinder></a-cylinder height="5"><a-animation begin="3800" attribute="position" from="6.58 20 -10" to="6.58 3.5 -10"></a-animation><a-animation begin="4500" attribute="position" from="6.58 3.5 -10" to="6.58 20 -10"></a-animation></a-entity>')
+      $("a-scene").append('<a-entity id="sphereRod"><a-cylinder></a-cylinder height="5"><a-animation begin="3800" attribute="position" from="6.58 20 -10" to="6.58 3.5 -10"></a-animation><a-animation begin="4500" attribute="position" from="6.58 3.5 -10" to="6.58 20 -10"></a-animation></a-entity>');
+
       // welcome slammer
-      $("a-scene").append('<a-entity id="welcomeRod"><a-cylinder></a-cylinder height="5" rotation="0 0 180"><a-animation begin="6000" attribute="position" from="-41 3 -10" to="-10 3 -10 -10"></a-animation><a-animation begin="7500" attribute="position" from="-10 3 -10" to="-100 3 -10"></a-animation></a-entity>')
+      $("a-scene").append('<a-entity id="welcomeRod"><a-cylinder></a-cylinder height="5" rotation="0 0 180"><a-animation begin="6000" attribute="position" from="-41 3 -10" to="-10 3 -10 -10"></a-animation><a-animation begin="7500" attribute="position" from="-10 3 -10" to="-100 3 -10"></a-animation></a-entity>');
     });
 
   // individual submenus
