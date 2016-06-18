@@ -72,7 +72,7 @@
       $(this).hide(1,function(){$(this).remove();});
 
       // create new sphere
-      $("a-scene").append('<a-entity id="sphereB" camera"><a-sphere position="0 0 -2" id="sphere1" material="color:pink)" radius="1"></a-sphere><a-animation attribute="position" from=0 0 -4" to="0 4 -8"></a-animation><a-animation begin="1410" attribute="rotation" dur="5000" fill="forwards" to="0 0 -360"></a-animation><a-animation attribute="position" begin="1710" from="0 4 -8" to="2 5 -8"></a-animation><a-animation attribute="position" begin="2500" from="2 5 -8" to="3.5 3.2 -8"></a-animation><a-animation attribute="position" begin="3400" from="3.5 3.2 -8" to="6.58 3.2 -8"></a-animation><a-animation attribute="position" begin="4500" from="6.58 3.2 -8" to="6.58 .9 -8"></a-animation></a-entity>');
+      $("a-scene").append('<a-entity id="sphereB" camera"><a-sphere position="0 0 -2" id="sphere1" material="color:blue" radius="1"></a-sphere><a-animation attribute="position" from=0 0 -4" to="0 4 -8"></a-animation><a-animation begin="1410" attribute="rotation" dur="5000" fill="forwards" to="0 0 -360"></a-animation><a-animation attribute="position" begin="1710" from="0 4 -8" to="2 5 -8"></a-animation><a-animation attribute="position" begin="2500" from="2 5 -8" to="3.5 3.2 -8"></a-animation><a-animation attribute="position" begin="3400" from="3.5 3.2 -8" to="6.58 3.2 -8"></a-animation><a-animation attribute="position" begin="4500" from="6.58 3.2 -8" to="6.58 .9 -8"></a-animation></a-entity>');
 
       // sphere slammer
       $("a-scene").append('<a-entity id="sphereRod"><a-cylinder></a-cylinder height="5"><a-animation begin="3800" attribute="position" from="6.58 20 -10" to="6.58 3.5 -10"></a-animation><a-animation begin="4500" attribute="position" from="6.58 3.5 -10" to="6.58 20 -10"></a-animation></a-entity>');
@@ -83,7 +83,7 @@
 
   // individual submenus
   $('#bask').on('click', function () {
-    $('#sphere1').attr('material', 'color:orange');
+    $('#sphere1').attr('material', 'color:#F16785');
   });
 
   $('#lightSwitch').on('click', function () {
