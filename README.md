@@ -3,7 +3,7 @@
 ####A page dedicated to showcasing options in webVR
 
 ####Menu
-### #basketball: switch the material of the sphere
+### #SphereColor: switch the material of the sphere
 
 ### #lightSwitch: turn up the intensity fo the light
 

@@ -37,7 +37,7 @@
     <a-plane id="menuBackground" height="1.5" width="10" material="color:black" position="0 6 -8.2"></a-plane>
 
     <!-- #bask for altering the sphere material -->
-    <a-entity id="bask"><a-plane id="basketball" height="1" width="1" position="-4 5.85 -8" material="src:url(https://cdn4.iconfinder.com/data/icons/sports-bold-line-2/48/82-128.png)"></a-plane></a-entity>
+    <a-entity id="sphereColor"><a-plane id="sphereChanger" height="1" width="1" position="-4 5.85 -8" material="src:url(https://cdn4.iconfinder.com/data/icons/sports-bold-line-2/48/82-128.png)"></a-plane></a-entity>
 
     <!-- #lightSwitch to change #light color and intensity -->
     <a-entity id="lightSwitch"><a-plane material="src:url(https://cdn3.iconfinder.com/data/icons/objects/512/Switcher-512.png)" position="-2.75 5.85 -8"></a-plane></a-entity>
@@ -92,7 +92,7 @@
     });
 
   // individual submenus
-  $('#bask').on('click', function () {
+  $('#sphereColor').on('click', function () {
     var thisColor = randomColor();
     $('#sphere1').attr('material', colors[thisColor]);
   });
