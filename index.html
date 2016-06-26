@@ -69,10 +69,10 @@
       $("a-scene").append('<a-entity><a-entity class="colorText" material="color:#F16785" scale="5 5 5" text="text:Lay  ut"></a-entity><a-animation begin="500" attribute="position" from="20 0 -10" to=".15 0 -10"></a-animation></a-entity>');
 
       //Virtual
-      $("a-scene").append('<a-entity><a-entity id="colorText" material="color:#F16785" scale="5 5 5" text="text:Virtual"></a-entity><a-animation begin="500" attribute="position" from="-20 0 -10" to="-10.5 0 -10"></a-animation></a-entity>');
+      $("a-scene").append('<a-entity><a-entity class="colorText" material="color:#F16785" scale="5 5 5" text="text:Virtual"></a-entity><a-animation begin="500" attribute="position" from="-20 0 -10" to="-10.5 0 -10"></a-animation></a-entity>');
 
       // welcome slide in and slide out
-      $("a-scene").append('<a-entity><a-entity material="color:#F16785" scale="1 1 1" text="text:Welcome to"></a-entity><a-animation begin="1100" attribute="position" from="-20 3 -10" to="-4 3 -10"></a-animation><a-animation begin="2000" attribute="position" from="-4 3 -10" to="-40 3 -10"></a-animation><a-animation begin="6050" attribute="position" from="-43 3 -10" to="-8 3 -10 -10"></a-animation></a-entity>');
+      $("a-scene").append('<a-entity><a-entity class="colorText" material="color:#F16785" scale="1 1 1" text="text:Welcome to"></a-entity><a-animation begin="1100" attribute="position" from="-20 3 -10" to="-4 3 -10"></a-animation><a-animation begin="2000" attribute="position" from="-4 3 -10" to="-40 3 -10"></a-animation><a-animation begin="6050" attribute="position" from="-43 3 -10" to="-8 3 -10 -10"></a-animation></a-entity>');
 
       // animated spotlight
       $("a-scene").append('<a-entity><a-entity id="spotLight" light="color:#F5F5F5; type:spot; intensity:1.8; angle:10"></a-entity><a-animation id="durAnimation" attribute="position" dur="5000" from="-25 -2 2" to="25 -1 4" repeat="indefinite"></a-animation></a-entity>');
@@ -119,7 +119,7 @@
   });
 
   $('#textSwitch').on('click', function(){
-    $('#colorText').attr('color', 'blue');
+    $('.colorText').attr('material', 'color:blue');
   });
 
   });
