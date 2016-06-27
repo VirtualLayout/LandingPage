@@ -8,6 +8,7 @@
   <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
   <script>
   var colors = ['color:black', 'color:grey', 'color:white', 'color:#F16785'];
+  var backgroundColors = ['black', 'silver', 'AliceBlue', 'pink']
   var randomColor =  function(){
     return Math.floor(Math.random() * colors.length)
   };
@@ -98,7 +99,7 @@
   });
 
   $('#lightSwitch').on('click', function () {
-    $('#light').attr('light','color:#555555; intensity:10');
+    $('#light').attr('light','color:#555555; intensity:17');
   });
 
   $('#spotLightSpeed').on('click', function () {
@@ -115,7 +116,8 @@
   });
 
   $('#backgroundSwitch').on('click', function(){
-    $('a-sky').attr('color', 'blue');
+    var bc = randomColor();
+    $('a-sky').attr('color', backgroundColors[bc]);
   });
 
   $('#textSwitch').on('click', function(){
