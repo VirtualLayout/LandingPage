@@ -120,8 +120,9 @@
     $('a-sky').attr('color', backgroundColors[bc]);
   });
 
-  $('#textSwitch').on('click', function(){
-    $('.colorText').attr('material', 'color:blue');
+  $(document).on('click', '#textSwitch', function(){
+    var textColor = randomColor();
+    $('.colorText').attr('material', colors[textColor]);
   });
 
   });
