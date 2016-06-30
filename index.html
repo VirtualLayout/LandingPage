@@ -99,7 +99,8 @@
   });
 
   $('#lightSwitch').on('click', function () {
-    $('#light').attr('light','color:#555555; intensity:17');
+    $('a-scene').append('<a-entity><a-entity class="light" light="color:#F5F5F5; intensity:2" position="-10 3 2"></a-entity></a-entity>');
+    $('a-scene').append('<a-entity><a-entity class="light" light="color:#F5F5F5; intensity:2" position="10 3 2"></a-entity></a-entity>')
   });
 
   $('#spotLightSpeed').on('click', function () {
