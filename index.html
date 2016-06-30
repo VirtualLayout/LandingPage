@@ -103,7 +103,9 @@
   });
 
   $('#spotLightSpeed').on('click', function () {
-    $('#durAnimation').attr('dur','1800');
+    $('a-scene').append('<a-entity><a-entity class="spotLight" light="color:#F5F5F5; type:spot; intensity:1.8; angle:10"></a-entity><a-animation class="durAnimation" attribute="position" dur="4000" from="-25 -2 2" to="25 -1 4" repeat="indefinite"></a-animation></a-entity>');
+    $('a-scene').append('<a-entity><a-entity class="spotLight" light="color:#F5F5F5; type:spot; intensity:1.8; angle:10"></a-entity><a-animation class="durAnimation" attribute="position" dur="3000" from="-25 -2 2" to="25 -1 4" repeat="indefinite"></a-animation></a-entity>');
+    $('a-scene').append('<a-entity><a-entity class="spotLight" light="color:#F5F5F5; type:spot; intensity:1.8; angle:10"></a-entity><a-animation class="durAnimation" attribute="position" dur="2000" from="-25 -2 2" to="25 -1 4" repeat="indefinite"></a-animation></a-entity>');
   });
 
   $('#cameraSwitch').on('click', function () {
