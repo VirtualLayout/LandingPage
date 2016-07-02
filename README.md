@@ -11,8 +11,8 @@
 
 ###cameraSwitch: switch the position and rotation of the camera
 
-###vibesSwitch: turn on music
-
 ###backgroundSwitch: change the background color
 
 ###textSwitch: change the color of the text
+
+###refresh: refresh the page
