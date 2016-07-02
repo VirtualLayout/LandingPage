@@ -57,7 +57,7 @@
     <!-- #backgroundSwitch to change background color -->
     <a-entity id="backgroundSwitch"><a-plane material="src:url(http://cdn.iconmonstr.com/wp-content/assets/preview/2015/240/iconmonstr-paint-bucket-4.png)" position="2.25 5.85 -8"></a-plane></a-entity>
 
-    <!-- vibesSwitch to turn on music -->
+    <!-- #refresh to refresh the page -->
     <a-entity id="refresh" geometry="primitive:plane" material="src:url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-refresh-128.png)" position="3.5 5.85 -8"></a-entity>
 
     <!-- sky -->
@@ -101,34 +101,40 @@
     $('#sphere1').attr('material', colors[thisColor]);
   });
 
+      // Adds two more lights
   $('#lightSwitch').on('click', function () {
     $('a-scene').append('<a-entity><a-entity class="light" light="color:#F5F5F5; intensity:2" position="-10 3 2"></a-entity></a-entity>');
     $('a-scene').append('<a-entity><a-entity class="light" light="color:#F5F5F5; intensity:2" position="10 3 2"></a-entity></a-entity>')
   });
 
+      // Adds three more lights which appear to make the spotlight move faster
   $('#spotLightSpeed').on('click', function () {
     $('a-scene').append('<a-entity><a-entity class="spotLight" light="color:#F5F5F5; type:spot; intensity:1.8; angle:10"></a-entity><a-animation class="durAnimation" attribute="position" dur="4000" from="-25 -2 2" to="25 -1 4" repeat="indefinite"></a-animation></a-entity>');
     $('a-scene').append('<a-entity><a-entity class="spotLight" light="color:#F5F5F5; type:spot; intensity:1.8; angle:10"></a-entity><a-animation class="durAnimation" attribute="position" dur="3000" from="-25 -2 2" to="25 -1 4" repeat="indefinite"></a-animation></a-entity>');
     $('a-scene').append('<a-entity><a-entity class="spotLight" light="color:#F5F5F5; type:spot; intensity:1.8; angle:10"></a-entity><a-animation class="durAnimation" attribute="position" dur="2000" from="-25 -2 2" to="25 -1 4" repeat="indefinite"></a-animation></a-entity>');
   });
 
+      // Changes camera position
   $('#cameraSwitch').on('click', function () {
     $('#camera').attr('position','5 0 0');
     $('#camera').attr('rotation','20 0 0');
   });
 
-  $('#refresh').click(function(){
-    location.reload();
-  });
-
+      // Changes the background color
   $('#backgroundSwitch').on('click', function(){
     var bc = randomColor();
     $('a-sky').attr('color', backgroundColors[bc]);
   });
 
+      // Changes the text color
   $(document).on('click', '#textSwitch', function(){
     var textColor = randomColor();
     $('.colorText').attr('material', colors[textColor]);
+  });
+
+      // Refreshes the page
+  $('#refresh').click(function(){
+    location.reload();
   });
 
   });
