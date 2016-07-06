@@ -7,8 +7,8 @@
   <script src="https://rawgit.com/ngokevin/aframe-text-component/master/dist/aframe-text-component.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
   <script>
-  var colors = ['color:black', 'color:grey', 'color:white', 'color:#F16785', 'color:AliceBlue', 'color:plum', 'color:wheat', 'color:tomato', 'color:SteelBlue' ];
-  var backgroundColors = ['black', 'silver', 'AliceBlue', 'pink', 'LightSlateGrey', 'plum', 'wheat', 'SteelBlue']
+  var colors = ['color:white' ,'color:black', 'color:silver', 'color:#F16785', 'color:AliceBlue', 'color:plum', 'color:wheat', 'color:SteelBlue', 'color:tomato' ];
+  var backgroundColors = ['black', 'silver', 'pink', 'AliceBlue', 'plum', 'wheat', 'SteelBlue']
   var randomColor =  function(){
     return Math.floor(Math.random() * colors.length)
   };
@@ -18,7 +18,6 @@
 <body>
   <a-scene>
     <a-assets>
-      <audio id="adams" src="Radams.mp3">
     </a-assets>
        <!-- camera -->
     <a-entity id="camera" rotation="0 0 0" position="0 0 0">
