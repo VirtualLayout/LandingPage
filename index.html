@@ -88,10 +88,10 @@
 
       $(sphere1).attr('material', colors[thisColor]);
       // sphere slammer
-      $("a-scene").append('<a-entity id="sphereRod"><a-cylinder></a-cylinder><a-animation begin="3800" attribute="position" from="6.58 20 -10" to="6.58 4.2 -10"></a-animation><a-animation begin="4500" attribute="position" from="6.58 4.2 -10" to="6.58 20 -10"></a-animation></a-entity>');
+      $("a-scene").append('<a-entity id="sphereRod"><a-cylinder></a-cylinder><a-animation attribute="position" from="0 0 0" to="6.58 20 -10"></a-animation><a-animation begin="3800" attribute="position" from="6.58 20 -10" to="6.58 4.2 -10"></a-animation><a-animation begin="4500" attribute="position" from="6.58 4.2 -10" to="6.58 200 -10"></a-animation></a-entity>');
 
       // welcome slammer
-      $("a-scene").append('<a-entity id="welcomeRod"><a-cylinder></a-cylinder><a-animation position=""></a-animation><a-animation begin="6000" attribute="position" from="-41 3 -10" to="-10 3 -10 -10"></a-animation><a-animation begin="7500" attribute="position" from="-10 3 -10" to="-100 3 -10"></a-animation></a-entity>');
+      $("a-scene").append('<a-entity id="welcomeRod"><a-cylinder></a-cylinder><a-animation attribute="position" from="0 0 0" to="-41 3 -10" duration="1"></a-animation><a-animation begin="6000" attribute="position" from="-41 3 -10" to="-10 3 -10 -10"></a-animation><a-animation begin="7500" attribute="position" from="-10 3 -10" to="-200 3 -10"></a-animation></a-entity>');
     });
 
   // individual submenus
