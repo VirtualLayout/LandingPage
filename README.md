@@ -3,9 +3,9 @@
 ####A page dedicated to showcasing options in webVR
 
 ####Menu
-### #SphereColor: switch the material of the sphere
+### SphereColor: switch the material of the sphere
 
-### #lightSwitch: turn up the intensity fo the light
+### lightSwitch: turn up the intensity for the light
 
 ###spotLightSpeed: switch the animation duration of the spot light
 
